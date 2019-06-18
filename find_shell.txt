@@ -1,0 +1,8 @@
+find . type f \( -name "*pattern*" -o -name "*pattern*" \) -mmin -60
+
+#above command will give output like this here 60 is 60 minute timing , this command will fetch all 
+those particular pattern file which were created in between 60 minutes
+
+$ find . -type f \( -name "*txt*" \) -mmin -60
+./new.txt
+./a.txt
