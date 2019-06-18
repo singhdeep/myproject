@@ -1,0 +1,24 @@
+# this file contain important awk commands
+
+ **************** print a particular fields with output feed seprator column:************************
+ awk -F"|" BEGIN'{OFS=":"}{print $1,$2,$3}' filename
+ 
+ ************print output only for those where column 2 is having a value equals to pattern*************
+ awk '{if ($2 ~/pattern*/) print $0}' filename
+ 
+ ***********print those all values which is having a pattern name: independent of any column*******
+ awk '/pattern*/{print $0}' filename
+ 
+ ****************print the number of fields in a file*****************
+ awk '{print NF}' filename
+ 
+ ****************print the last fields values or nth feild values******************
+ awk -F"|" '{print $NF}' filename
+ 
+ ***************add extra column_value in output file**********************
+ awk -F"|" '{print "newcoloumn_values", $0}' filename
+ 
+ **************compare two file and get data of first file from second file*****************
+ awk -F"|" 'FNR==NR {hash[$0]; next} $2 in hash' file1.txt file2.txt > matching.txt
+ **************line number with specific field number and data******************
+awk -F"|" 'NF==7{print NR $0}' a.txt
