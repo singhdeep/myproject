@@ -1,8 +1,36 @@
-find . type f \( -name "*pattern*" -o -name "*pattern*" \) -mmin -60
-
-#above command will give output like this here 60 is 60 minute timing , this command will fetch all 
-those particular pattern file which were created in between 60 minutes
-
+#How to check files which were created in last 60 minutes?
 $ find . -type f \( -name "*txt*" \) -mmin -60
 ./new.txt
 ./a.txt
+
+# how to update a text of all the .txt extension files in a directory?
+$ pwd
+/home/am92370/deepak/test
+$ ls -ltr 
+total 16
+-rw-r--r-- 1 am92370 abinitio 12 Jun 21 01:42 1
+-rw-r--r-- 1 am92370 abinitio 15 Jun 21 01:58 c.txt
+-rw-r--r-- 1 am92370 abinitio 11 Jun 21 01:58 b.txt
+-rw-r--r-- 1 am92370 abinitio 14 Jun 21 01:58 a.txt
+$ cat c.txt
+yes it is java
+$ cat b.txt
+s is java 
+$ 
+$ cat a.txt
+this is java
+$ we have to replace word java with Linux in all the files of this directory, below is the command
+$ find . -name "*txt*" -mtime -1 -type f -exec sed -i 's/java/Linux/g' {} \;
+$ ls -ltr 
+total 16
+-rw-r--r-- 1 am92370 abinitio 12 Jun 21 01:42 1
+-rw-r--r-- 1 am92370 abinitio 16 Jun 21 02:04 c.txt
+-rw-r--r-- 1 am92370 abinitio 12 Jun 21 02:04 b.txt
+-rw-r--r-- 1 am92370 abinitio 15 Jun 21 02:04 a.txt
+$ check last updated time. which shows files were updated. lets check this out
+$ cat c.txt
+yes it is Linux
+$ cat b.txt
+s is Linux 
+$ cat a.txt
+this is Linux
