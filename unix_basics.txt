@@ -1,0 +1,19 @@
+pwd
+:present working directory
+whoami
+: name of the user
+uname
+:to check whether user is linux or unix
+
+
+cd - 
+: to go back to previous directory which u were in 
+cd ~ 
+: to go back to home directory
+
+mkdir directory_name
+: to create a new directory
+chmod 777 filename or dic_name
+: to give permissions to the dir or files
+
+
