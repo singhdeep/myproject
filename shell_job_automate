@@ -1,0 +1,15 @@
+#jobs made with the help of crontab to automate any script
+
+run below to check any present crontab job
+crontab -l
+
+run below to make a crontab
+crontab -e
+once it open in vi
+place below line 
+#* * * * * echo "hello world" >> /home/am92370/deepak/script/mycronjob.txt
+#* * * * * /bin/ksh /home/am92370/deepak/script/myjob.ksh
+
+remove # and update accordingly
+
+now as per crontab create any script like in mycase it was myjob.ksh
