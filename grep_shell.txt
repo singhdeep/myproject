@@ -25,3 +25,31 @@ id|name|psno|address
 7|seema|10647509|bihar
 $ 
 $ -v : it will display everything in file except that specific pattern 
+_________________________________________________________________________________________
+$ egrep stand for extended global regular expression 
+$ lets play with file f.txt
+$ 
+$ egrep --color 'deepak' f.txt
+1|deepak|106|punjab
+8|deepak|106|punjab
+$ --color : will display the pattern only in some color 
+$ 
+$ egrep -v 'deepak|seema' f.txt
+id|name|psno|address
+2|matin|1062|MH
+3|rana|1063|mumbai
+4|darshana|1064|pune
+5|arjun|106475077|karnataka
+6|abhai|106475078|up
+$ 
+$ -v : it will show everything except those selected pattern
+$ 
+$ and egrep  helps in multiple pattern selection unlike grep thats why it is known as extended grep
+$ 
+$ lets run all the above combine with line number
+$ 
+$ egrep --color -n -i 'deepak|seema|matin' f.txt
+2:1|deepak|106|punjab
+3:2|matin|1062|MH
+8:7|seema|10647509|bihar
+9:8|deepak|106|punjab
