@@ -1,0 +1,27 @@
+$ file name f.txt contain some data we will run some grep commands on it 
+$ grep -i 'DEEPAK' f.txt
+1|deepak|106|punjab
+8|deepak|106|punjab
+$ -i : is use to avoid case senstivity 
+$ 
+$ grep -n 'deepak' f.txt
+2:1|deepak|106|punjab
+9:8|deepak|106|punjab
+$ -n : will display the line number on which that pattern exist
+$ 
+$ grep -c 'deepak' f.txt
+2
+$ -c : will display how many type that pattern appear 
+$ 
+$ 
+$ 
+$ grep -v 'deepak' f.txt
+id|name|psno|address
+2|matin|1062|MH
+3|rana|1063|mumbai
+4|darshana|1064|pune
+5|arjun|106475077|karnataka
+6|abhai|106475078|up
+7|seema|10647509|bihar
+$ 
+$ -v : it will display everything in file except that specific pattern 
