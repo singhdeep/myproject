@@ -16,4 +16,25 @@ mkdir directory_name
 chmod 777 filename or dic_name
 : to give permissions to the dir or files
 
+ls -ld */
+: to check all the directories 
+
+echo $? 
+: to check the preivios command ran successfully 
+if output is 0 it means command ran successfully
+
+touch filename
+: is use for creating empty file
+
+cat filename
+: is use to open a file
+zcat filename
+: is use to open a file which is in gzip format
+
+vi filename 
+: to open a file in vi editor 
+
+sed -i 's/patteren/replacement_pattern/g'
+: -i is input  above will directly do pattern changes in the file itself 
+sed is stream line editor
 
