@@ -1,0 +1,50 @@
+python
+************
+>>variable : can be number , string 
+x='hello'
+x='5'
+if same variable declared again it will replace old value with new.
+_______________________________________________________________________________________________________
+>>numbers: number are three type 
+x=5 (int) (negative or positive numbers)
+x=2.3(float) (numbers with decimal)
+x=1j(complex) which have alphabates and numbers 
+_______________________________________________________________________________________________________
+>>casting: changing one type to another
+in python easy to convert a type into another
+for eg:
+x=2  
+print(type(2))
+output >> int : ## is int now i want to change this variable type to float.
+x=float(2)
+print(type(x))
+output >> float
+this is how type casting done in this case
+_______________________________________________________________________________________________________
+>>list:
+list is ordered and changebale collection , it can contain duplicate data, use square bracket
+my_list=['number','patter','cities']
+print(my_list)
+output >> ['number','patter','cities']
+_______________________________________________________________________________________________________
+>>tupple: tupple is ordered and unchangeble, all members ahve there index values ,it can have duplicate use  brackets ()
+
+my_tupple=('hello','flag','shoes')
+print(my_tupple)
+output >> ('hello','flag','shoes','shoes')
+_______________________________________________________________________________________________________
+>>set: is a collection which is unordered and unindexed. sets written in curly brakets
+
+my_set={'hello','yeeah','data'}
+print(my_set())
+output >> {'hello','yeeah','data'}
+_______________________________________________________________________________________________________
+>>dictionary: collection which is indexed, changeble and unordered. curly bracket
+my_dictionary= {
+"brand"="ford",
+"model"="mushtang",
+"speed"="140kmph"
+}
+_______________________________________________________________________________________________________
+
+
