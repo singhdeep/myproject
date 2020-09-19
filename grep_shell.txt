@@ -53,3 +53,9 @@ $ egrep --color -n -i 'deepak|seema|matin' f.txt
 3:2|matin|1062|MH
 8:7|seema|10647509|bihar
 9:8|deepak|106|punjab
+
+
+grep zip file
+check the pattern in all the files present in current directory, but only show name of the files in output instead of pattern
+
+zgrep -l pattern "*.gz
